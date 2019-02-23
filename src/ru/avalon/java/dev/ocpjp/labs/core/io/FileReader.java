@@ -10,7 +10,7 @@ import java.io.IOException;
 public interface FileReader extends Closeable {
 
     /**
-     * Возвращает выранную строку файла.
+     * Возвращает выбранную строку файла.
      *
      * @param line номер строки
      * @return экземпляр типа {@link String}
@@ -26,7 +26,7 @@ public interface FileReader extends Closeable {
     int getLinesCount();
 
     /**
-     * фабричный метод, возвращающий реализацию ситателя
+     * фабричный метод, возвращающий реализацию читателя
      * файла на основе переданного описателя файла.
      *
      * @param file описатель файла

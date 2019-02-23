@@ -32,7 +32,7 @@ public interface RandomFileReader extends Closeable {
     }
 
     /**
-     * Фабричный метод, возвращающий реалихацию интерфейса
+     * Фабричный метод, возвращающий реализацию интерфейса
      * {@link RandomFileReader}.
      *
      * @param pathname путь к файлу, хранящемуся в ресурсах

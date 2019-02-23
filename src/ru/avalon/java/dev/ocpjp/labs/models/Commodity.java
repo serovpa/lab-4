@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.util.Collection;
 
 /**
- * Абстрактное представлене о товаре.
+ * Абстрактное представление о товаре.
  */
 public interface Commodity {
     /**
-     * Возвращяет код товара.
+     * Возвращает код товара.
      *
      * @return код товара в виде строки.
      */
@@ -20,7 +20,7 @@ public interface Commodity {
     /**
      * Возвращает артикул товара
      *
-     * @return артикул товаа в виде строки.
+     * @return артикул товара в виде строки.
      */
     String getVendorCode();
 
@@ -54,7 +54,7 @@ public interface Commodity {
          * Устанавливает код товара.
          *
          * @param code код товара
-         * @return экземпояр типа {@link CommodityBuilder}
+         * @return экземпляр типа {@link CommodityBuilder}
          */
         CommodityBuilder code(String code);
 
@@ -62,7 +62,7 @@ public interface Commodity {
          * Устанавливает артикул товара.
          *
          * @param vendorCode артикул товара
-         * @return экземпояр типа {@link CommodityBuilder}
+         * @return экземпляр типа {@link CommodityBuilder}
          */
         CommodityBuilder vendorCode(String vendorCode);
 
@@ -70,7 +70,7 @@ public interface Commodity {
          * Устанавливает наименование товара.
          *
          * @param name наименование товара
-         * @return экземпояр типа {@link CommodityBuilder}
+         * @return экземпляр типа {@link CommodityBuilder}
          */
         CommodityBuilder name(String name);
 
@@ -78,7 +78,7 @@ public interface Commodity {
          * Устанавливает стоимость товара.
          *
          * @param price стоимость товара
-         * @return экземпояр типа {@link CommodityBuilder}
+         * @return экземпляр типа {@link CommodityBuilder}
          */
         CommodityBuilder price(double price);
 
@@ -86,7 +86,7 @@ public interface Commodity {
          * Устанавливает остаток товара на складе.
          *
          * @param residue остаток товара
-         * @return экземпояр типа {@link CommodityBuilder}
+         * @return экземпляр типа {@link CommodityBuilder}
          */
         CommodityBuilder residue(int residue);
 
@@ -95,7 +95,7 @@ public interface Commodity {
          * проинициализированный согласно заданной
          * конфигурации.
          *
-         * @return экземпояр типа {@link Commodity}
+         * @return экземпляр типа {@link Commodity}
          */
         @Override
         Commodity build();
@@ -110,9 +110,9 @@ public interface Commodity {
     static CommodityBuilder builder() {
         /*
          * TODO(Студент): Реализовать метод 'builder()' типа 'Commodity'
-         * В рамках задачи потребубется создать реализацию
+         * В рамках задачи потребуется создать реализацию
          * интерфейса CommodityBuilder, что в свою очередь
-         * потребует создаиня реализации для интерфейса Commodity.
+         * потребует создания реализации для интерфейса Commodity.
          *
          * Созданные реализации случше всего инкапсулировать
          * на уровне пакета.
