@@ -565,4 +565,7 @@ Stream<Integer> numbers = Stream.generate(random::nextInt)
                                 .limit(100);
 ```
 
+> Настоящее описание к лабораторной работе будет 
+расширено  и дополнено в ближайшее время.
+
 Подробную информацию можно посмотреть в [официальной документации](https://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html).
