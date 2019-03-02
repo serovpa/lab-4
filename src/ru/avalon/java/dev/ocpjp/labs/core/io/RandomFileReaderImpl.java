@@ -6,7 +6,7 @@ import java.util.Random;
 
 import static java.util.Objects.nonNull;
 
-final class RandomFileReaderImpl implements RandomFileReader {
+public final class RandomFileReaderImpl implements RandomFileReader {
 
     private FileReader reader;
 
